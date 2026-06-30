@@ -195,6 +195,7 @@
   "About": {
     "eyebrow": "Sobre mí",
     "title": "Hola, soy Mateo Guillén",
+    "degree": "Ingeniero en Ciencias de la Computación",
     "intro": "Soy desarrollador web freelance. Diseño y construyo sitios web, y además me encargo de que esos sitios se encuentren: SEO, Google Analytics y Google Ads, todo bajo el mismo techo.",
     "philosophyTitle": "Cómo trabajo",
     "philosophy": "Creo que un sitio web no termina cuando se publica. Por eso integro el desarrollo con la medición y la captación de tráfico desde el inicio del proyecto, en lugar de tratarlos como servicios separados.",
@@ -205,7 +206,39 @@
       "SEO técnico y de contenido",
       "Google Analytics 4 y Google Tag Manager",
       "Google Ads (búsqueda, display y remarketing)",
+      "Automatización y agentes con IA",
       "Despliegue en Vercel y plataformas cloud"
+    ],
+    "experienceTitle": "Experiencia",
+    "experience": [
+      {
+        "company": "Cristian Collection",
+        "role": "Consultor y desarrollador",
+        "location": "Cuenca, Ecuador",
+        "period": "Oct. 2025 – Feb. 2026",
+        "description": "Desarrollo web para fortalecer la presencia digital de la marca, además de una aplicación con IA que automatiza la toma de fotografías de producto y agiliza el flujo de trabajo del equipo."
+      },
+      {
+        "company": "CEDIA — Corporación Ecuatoriana para el Desarrollo de la Investigación y la Academia",
+        "role": "Practicante, Dirección de Tecnología e Inteligencia Artificial",
+        "location": "Ecuador",
+        "period": "Jul. – Ago. 2025",
+        "description": "Colaboré en el desarrollo de agentes inteligentes y flujos de trabajo basados en IA, y en la detección de errores en sistemas internos de la organización."
+      },
+      {
+        "company": "GAD Provincial del Azuay",
+        "role": "Practicante, Dirección de Tecnologías de la Información",
+        "location": "Cuenca, Ecuador",
+        "period": "Jul. – Oct. 2024",
+        "description": "Desarrollé una intranet institucional funcional y fácil de usar, y participé en el seguimiento y ajuste del chatbot institucional."
+      },
+      {
+        "company": "Universidad del Azuay",
+        "role": "Tutor de Análisis Matemático",
+        "location": "Cuenca, Ecuador",
+        "period": "Sep. 2023 – Ene. 2024",
+        "description": "Apoyo académico a estudiantes de Ingeniería en Ciencias de la Computación en Análisis Matemático I."
+      }
     ],
     "cta": "Hablemos de tu proyecto"
   },

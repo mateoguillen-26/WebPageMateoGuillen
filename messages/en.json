@@ -195,6 +195,7 @@
   "About": {
     "eyebrow": "About me",
     "title": "Hi, I'm Mateo Guillén",
+    "degree": "Computer Science Engineer",
     "intro": "I'm a freelance web developer. I design and build websites, and I also make sure those sites get found: SEO, Google Analytics and Google Ads, all under one roof.",
     "philosophyTitle": "How I work",
     "philosophy": "I believe a website isn't done when it's published. That's why I integrate development with measurement and traffic acquisition from the start of the project, instead of treating them as separate services.",
@@ -205,7 +206,39 @@
       "Technical and content SEO",
       "Google Analytics 4 and Google Tag Manager",
       "Google Ads (search, display and remarketing)",
+      "AI automation and agents",
       "Deployment on Vercel and cloud platforms"
+    ],
+    "experienceTitle": "Experience",
+    "experience": [
+      {
+        "company": "Cristian Collection",
+        "role": "Consultant & Developer",
+        "location": "Cuenca, Ecuador",
+        "period": "Oct 2025 – Feb 2026",
+        "description": "Web development to strengthen the brand's digital presence, plus an AI-powered app that automates product photography and speeds up the team's workflow."
+      },
+      {
+        "company": "CEDIA — Ecuadorian Corporation for the Development of Research and Academia",
+        "role": "Intern, Technology & AI Division",
+        "location": "Ecuador",
+        "period": "Jul – Aug 2025",
+        "description": "Collaborated on building intelligent agents and AI-based workflows, and on identifying errors in the organization's internal systems."
+      },
+      {
+        "company": "Azuay Provincial Government (GAD Provincial del Azuay)",
+        "role": "Intern, IT Department",
+        "location": "Cuenca, Ecuador",
+        "period": "Jul – Oct 2024",
+        "description": "Built a functional, easy-to-use institutional intranet, and helped monitor and tune the institution's chatbot."
+      },
+      {
+        "company": "Universidad del Azuay",
+        "role": "Math Analysis Tutor",
+        "location": "Cuenca, Ecuador",
+        "period": "Sep 2023 – Jan 2024",
+        "description": "Academic support for Computer Science Engineering students in Math Analysis I."
+      }
     ],
     "cta": "Let's talk about your project"
   },
