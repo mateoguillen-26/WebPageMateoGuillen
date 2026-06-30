@@ -1,0 +1,203 @@
+{
+  "Metadata": {
+    "siteName": "Mateo Guillén",
+    "defaultTitle": "Mateo Guillén — Desarrollo web, SEO y Google Ads",
+    "defaultDescription": "Desarrollador web freelance. Creo landing pages, sitios avanzados y tiendas online, y me encargo del SEO, Google Analytics y Google Ads de tu negocio."
+  },
+  "Nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "cta": "Pide presupuesto"
+  },
+  "Footer": {
+    "tagline": "Desarrollo web y marketing digital para negocios que quieren crecer en internet.",
+    "servicesTitle": "Servicios",
+    "siteTitle": "Sitio",
+    "contactTitle": "Contacto",
+    "rights": "Todos los derechos reservados."
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Desarrollador web freelance",
+      "title": "Webs que cargan rápido, posicionan bien y convierten visitas en clientes",
+      "subtitle": "Diseño y desarrollo tu landing, sitio web o tienda online, y luego la hago visible: SEO, Google Analytics y Google Ads gestionados de principio a fin.",
+      "ctaPrimary": "Pide tu presupuesto",
+      "ctaSecondary": "Ver servicios"
+    },
+    "trust": {
+      "title": "Un solo proveedor para todo lo digital",
+      "items": [
+        "Código propio, sin plantillas genéricas",
+        "Sitios optimizados para SEO desde el día uno",
+        "Reportes claros de Analytics y Ads, sin tecnicismos"
+      ]
+    },
+    "servicesTeaser": {
+      "eyebrow": "Qué hago",
+      "title": "Servicios",
+      "subtitle": "Desde la primera línea de código hasta la primera conversión.",
+      "cta": "Ver todos los servicios"
+    },
+    "process": {
+      "eyebrow": "Cómo trabajo",
+      "title": "Un proceso simple, sin sorpresas",
+      "steps": [
+        {
+          "title": "Diagnóstico",
+          "description": "Hablamos de tu negocio, objetivos y presupuesto. Te propongo el alcance exacto del proyecto."
+        },
+        {
+          "title": "Diseño y desarrollo",
+          "description": "Construyo el sitio o la campaña con avances visibles, para que puedas dar feedback en cada etapa."
+        },
+        {
+          "title": "Lanzamiento",
+          "description": "Publico en producción, conecto Analytics y dejo todo medible desde el primer visitante."
+        },
+        {
+          "title": "Crecimiento",
+          "description": "SEO y Google Ads para que el sitio siga atrayendo clientes después de la entrega."
+        }
+      ]
+    },
+    "aboutTeaser": {
+      "eyebrow": "Sobre mí",
+      "title": "Desarrollador, no solo diseñador",
+      "description": "Trabajo el código, la velocidad de carga, el SEO técnico y la analítica como parte del mismo proyecto, no como extras separados. Así tu sitio no solo se ve bien: funciona.",
+      "cta": "Conóceme"
+    },
+    "cta": {
+      "title": "¿Tienes un proyecto en mente?",
+      "subtitle": "Cuéntame qué necesitas y te respondo con una propuesta concreta en menos de 48 horas.",
+      "button": "Hablemos de tu proyecto"
+    }
+  },
+  "Services": {
+    "indexEyebrow": "Servicios",
+    "indexTitle": "Desarrollo tu web y la hago crecer",
+    "indexDescription": "Dos frentes, un mismo objetivo: que tu negocio venda más online. Desarrollo de páginas web por un lado, SEO y publicidad por el otro.",
+    "categoryDevelopment": "Desarrollo web",
+    "categoryMarketing": "SEO y publicidad",
+    "detailCtaTitle": "¿Te interesa este servicio?",
+    "detailCtaSubtitle": "Cuéntame sobre tu proyecto y te envío una propuesta a medida.",
+    "detailCtaButton": "Solicitar presupuesto",
+    "featuresTitle": "Qué incluye",
+    "backToServices": "Volver a servicios",
+    "items": {
+      "landing": {
+        "title": "Páginas Landing",
+        "shortDescription": "Una página enfocada en un solo objetivo: convertir visitas en leads o ventas.",
+        "description": "Diseño landing pages rápidas y enfocadas en conversión: para lanzar un producto, captar leads o promocionar un servicio puntual. Ideales si necesitas presencia online sin la complejidad de un sitio completo.",
+        "features": [
+          "Diseño a medida, responsive y optimizado para móvil",
+          "Formulario de contacto o captación de leads integrado",
+          "Carga rápida y buenas prácticas de SEO desde el inicio",
+          "Integración con Google Analytics para medir resultados",
+          "Entrega en pocos días"
+        ]
+      },
+      "web-avanzada": {
+        "title": "Páginas Web Avanzadas",
+        "shortDescription": "Sitios multi-página con secciones, blog, paneles o funcionalidades a medida.",
+        "description": "Desarrollo sitios web completos para empresas, profesionales o instituciones: varias páginas, blog, formularios avanzados, integraciones con sistemas externos y paneles de administración cuando se necesitan.",
+        "features": [
+          "Arquitectura de sitio a medida (múltiples páginas y secciones)",
+          "Blog o sección de noticias con gestión de contenido",
+          "Integraciones con APIs, CRMs o herramientas de terceros",
+          "Rendimiento y SEO técnico optimizados",
+          "Panel de administración cuando el proyecto lo requiere"
+        ]
+      },
+      "ecommerce": {
+        "title": "Tiendas Online (E-commerce)",
+        "shortDescription": "Tiendas online completas: catálogo, carrito, pagos y gestión de pedidos.",
+        "description": "Construyo tiendas online a medida o sobre plataformas robustas, con catálogo de productos, carrito de compras, pasarela de pago y gestión de pedidos, pensadas para que administrar tu inventario sea simple.",
+        "features": [
+          "Catálogo de productos con categorías y variantes",
+          "Carrito de compras y checkout optimizado",
+          "Integración con pasarelas de pago",
+          "Gestión de inventario y pedidos",
+          "SEO para fichas de producto y categorías"
+        ]
+      },
+      "seo": {
+        "title": "SEO de Páginas Web",
+        "shortDescription": "Optimización para que tu sitio aparezca cuando tus clientes buscan en Google.",
+        "description": "Trabajo el SEO técnico y de contenido de tu sitio: velocidad de carga, estructura, metadatos, datos estructurados y estrategia de palabras clave, para mejorar tu posicionamiento orgánico de forma sostenida.",
+        "features": [
+          "Auditoría SEO técnica completa",
+          "Optimización de velocidad y Core Web Vitals",
+          "Investigación y estrategia de palabras clave",
+          "Optimización de metadatos y datos estructurados",
+          "Seguimiento mensual de posiciones y resultados"
+        ]
+      },
+      "google-analytics": {
+        "title": "Administración de Google Analytics",
+        "shortDescription": "Configuro y gestiono tu Google Analytics para que tengas datos claros y accionables.",
+        "description": "Configuro Google Analytics 4 desde cero o reviso tu configuración actual: eventos, conversiones y paneles personalizados, para que sepas exactamente de dónde vienen tus visitantes y qué hacen en tu sitio.",
+        "features": [
+          "Configuración inicial de Google Analytics 4",
+          "Definición de eventos y conversiones clave",
+          "Paneles e informes personalizados",
+          "Vinculación con Google Search Console y Google Ads",
+          "Revisión y reportes mensuales"
+        ]
+      },
+      "google-ads": {
+        "title": "Administración de Google Ads",
+        "shortDescription": "Campañas de búsqueda y display gestionadas para atraer clientes calificados.",
+        "description": "Creo y administro tus campañas de Google Ads: investigación de palabras clave, segmentación, anuncios y optimización continua del presupuesto, enfocado en conseguir conversiones, no solo clics.",
+        "features": [
+          "Estrategia y estructura de campañas",
+          "Investigación de palabras clave y segmentación",
+          "Redacción y prueba de anuncios",
+          "Optimización continua de pujas y presupuesto",
+          "Reportes mensuales de rendimiento e inversión"
+        ]
+      }
+    }
+  },
+  "About": {
+    "eyebrow": "Sobre mí",
+    "title": "Hola, soy Mateo Guillén",
+    "intro": "Soy desarrollador web freelance. Diseño y construyo sitios web, y además me encargo de que esos sitios se encuentren: SEO, Google Analytics y Google Ads, todo bajo el mismo techo.",
+    "philosophyTitle": "Cómo trabajo",
+    "philosophy": "Creo que un sitio web no termina cuando se publica. Por eso integro el desarrollo con la medición y la captación de tráfico desde el inicio del proyecto, en lugar de tratarlos como servicios separados.",
+    "skillsTitle": "Con qué trabajo",
+    "skills": [
+      "Next.js, React y TypeScript",
+      "Tailwind CSS y diseño responsive",
+      "SEO técnico y de contenido",
+      "Google Analytics 4 y Google Tag Manager",
+      "Google Ads (búsqueda, display y remarketing)",
+      "Despliegue en Vercel y plataformas cloud"
+    ],
+    "cta": "Hablemos de tu proyecto"
+  },
+  "Contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos de tu proyecto",
+    "subtitle": "Contame qué necesitas y te respondo en menos de 48 horas con los próximos pasos.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "service": "Servicio de interés",
+      "servicePlaceholder": "Selecciona un servicio",
+      "serviceOther": "Otro / no estoy seguro",
+      "message": "Mensaje",
+      "messagePlaceholder": "Contame sobre tu proyecto, plazos y presupuesto aproximado",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando...",
+      "successTitle": "¡Mensaje enviado!",
+      "successMessage": "Gracias por escribirme. Te responderé a tu email en menos de 48 horas.",
+      "errorMessage": "Hubo un problema al enviar el mensaje. Probá de nuevo o escribime directamente por email."
+    },
+    "directTitle": "También podés escribirme directamente",
+    "emailLabel": "Email"
+  }
+}
