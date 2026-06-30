@@ -8,7 +8,7 @@ function absoluteUrl(path: string) {
   return new URL(path, siteConfig.url).toString();
 }
 
-function staticEntry(pathname: "/" | "/servicios" | "/sobre-mi" | "/contacto") {
+function staticEntry(pathname: "/" | "/servicios" | "/proyectos" | "/sobre-mi" | "/contacto") {
   return {
     url: absoluteUrl(getPathname({ locale: routing.defaultLocale, href: { pathname } })),
     alternates: {
@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     staticEntry("/"),
     staticEntry("/servicios"),
+    staticEntry("/proyectos"),
     staticEntry("/sobre-mi"),
     staticEntry("/contacto"),
     ...services.map((service) => serviceEntry(service.slug)),

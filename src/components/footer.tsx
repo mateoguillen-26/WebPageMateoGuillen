@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Code2 } from "lucide-react";
+import { Code2, FolderGit2 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { services } from "@/lib/services-data";
 import { siteConfig } from "@/lib/site-config";
@@ -41,6 +41,11 @@ export function Footer() {
           <h3 className="text-sm font-semibold">{t("siteTitle")}</h3>
           <ul className="space-y-2">
             <li>
+              <Link href="/proyectos" className="text-sm text-muted-foreground hover:text-foreground">
+                {tNav("projects")}
+              </Link>
+            </li>
+            <li>
               <Link href="/sobre-mi" className="text-sm text-muted-foreground hover:text-foreground">
                 {tNav("about")}
               </Link>
@@ -56,6 +61,17 @@ export function Footer() {
                 className="text-sm text-muted-foreground hover:text-foreground"
               >
                 {siteConfig.contactEmail}
+              </a>
+            </li>
+            <li>
+              <a
+                href={siteConfig.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
+              >
+                <FolderGit2 className="size-3.5" aria-hidden />
+                GitHub
               </a>
             </li>
           </ul>

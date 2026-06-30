@@ -4,7 +4,9 @@ import { Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
 import { ServiceCard } from "@/components/service-card";
+import { ProjectCard } from "@/components/project-card";
 import { services } from "@/lib/services-data";
+import { projects } from "@/lib/projects-data";
 
 export default async function HomePage({
   params,
@@ -16,6 +18,7 @@ export default async function HomePage({
 
   const t = await getTranslations("Home");
   const tServices = await getTranslations("Services.items");
+  const tProjects = await getTranslations("Projects.items");
 
   const steps = t.raw("process.steps") as { title: string; description: string }[];
   const trustItems = t.raw("trust.items") as string[];
@@ -152,6 +155,43 @@ export default async function HomePage({
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-primary">
+              {t("projectsTeaser.eyebrow")}
+            </p>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight">
+              {t("projectsTeaser.title")}
+            </h2>
+            <p className="mt-2 max-w-xl text-muted-foreground">
+              {t("projectsTeaser.subtitle")}
+            </p>
+          </div>
+          <Button
+            variant="ghost"
+            render={
+              <Link href="/proyectos">
+                {t("projectsTeaser.cta")}
+                <ArrowRight className="size-4" />
+              </Link>
+            }
+          />
+        </div>
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              title={tProjects(`${project.slug}.title`)}
+              category={tProjects(`${project.slug}.category`)}
+              description={tProjects(`${project.slug}.description`)}
+            />
+          ))}
         </div>
       </section>
 

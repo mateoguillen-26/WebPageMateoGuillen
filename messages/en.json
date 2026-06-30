@@ -7,6 +7,7 @@
   "Nav": {
     "home": "Home",
     "services": "Services",
+    "projects": "Projects",
     "about": "About",
     "contact": "Contact",
     "cta": "Get a quote"
@@ -61,6 +62,12 @@
           "description": "SEO and Google Ads so the site keeps bringing in customers after delivery."
         }
       ]
+    },
+    "projectsTeaser": {
+      "eyebrow": "Projects",
+      "title": "Real projects, not mockups",
+      "subtitle": "A few sites and systems I designed and built for clients.",
+      "cta": "View all projects"
     },
     "aboutTeaser": {
       "eyebrow": "About me",
@@ -157,6 +164,31 @@
           "Ongoing bid and budget optimization",
           "Monthly performance and spend reports"
         ]
+      }
+    }
+  },
+  "Projects": {
+    "indexEyebrow": "Projects",
+    "indexTitle": "Real projects, not mockups",
+    "indexDescription": "A few sites and systems I designed and built for clients, in production.",
+    "liveLabel": "View site",
+    "repoLabel": "View code on GitHub",
+    "demoNote": "The demo is free-tier hosted and may take a few seconds to wake up.",
+    "items": {
+      "cristian-collection": {
+        "title": "Christian Collection",
+        "category": "E-commerce / Jewelry",
+        "description": "Site for a jewelry business specializing in engagement and wedding rings with certified diamonds, with a catalog and service across Quito, Guayaquil and Cuenca."
+      },
+      "optica-arichavala": {
+        "title": "Óptica Arichavala",
+        "category": "Business website",
+        "description": "Site for an optical store with state-of-the-art diagnostics, a frames catalog and personalized service."
+      },
+      "tecnero": {
+        "title": "Tecnero",
+        "category": "Internal management system",
+        "description": "A platform that digitizes the raw-material requirement and purchase order process for an LPG cylinder company, with role-based approval workflows. FastAPI backend."
       }
     }
   },

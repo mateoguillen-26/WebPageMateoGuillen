@@ -7,6 +7,7 @@
   "Nav": {
     "home": "Inicio",
     "services": "Servicios",
+    "projects": "Proyectos",
     "about": "Sobre mí",
     "contact": "Contacto",
     "cta": "Pide presupuesto"
@@ -61,6 +62,12 @@
           "description": "SEO y Google Ads para que el sitio siga atrayendo clientes después de la entrega."
         }
       ]
+    },
+    "projectsTeaser": {
+      "eyebrow": "Proyectos",
+      "title": "Proyectos reales, no mockups",
+      "subtitle": "Algunos sitios y sistemas que diseñé y desarrollé para clientes.",
+      "cta": "Ver todos los proyectos"
     },
     "aboutTeaser": {
       "eyebrow": "Sobre mí",
@@ -157,6 +164,31 @@
           "Optimización continua de pujas y presupuesto",
           "Reportes mensuales de rendimiento e inversión"
         ]
+      }
+    }
+  },
+  "Projects": {
+    "indexEyebrow": "Proyectos",
+    "indexTitle": "Proyectos reales, no mockups",
+    "indexDescription": "Algunos sitios y sistemas que diseñé y desarrollé para clientes, en producción.",
+    "liveLabel": "Ver sitio",
+    "repoLabel": "Ver código en GitHub",
+    "demoNote": "El demo es gratuito y puede tardar unos segundos en despertar.",
+    "items": {
+      "cristian-collection": {
+        "title": "Christian Collection",
+        "category": "E-commerce / Joyería",
+        "description": "Sitio para una joyería especializada en anillos de compromiso y matrimonio con diamantes certificados, con catálogo y atención en Quito, Guayaquil y Cuenca."
+      },
+      "optica-arichavala": {
+        "title": "Óptica Arichavala",
+        "category": "Sitio institucional",
+        "description": "Sitio para una óptica con diagnósticos de última generación, catálogo de armazones y atención personalizada."
+      },
+      "tecnero": {
+        "title": "Tecnero",
+        "category": "Sistema interno de gestión",
+        "description": "Plataforma que digitaliza el proceso de requerimientos de materia prima y pedidos de compra de una empresa de cilindros de GLP, con flujos de aprobación por roles. Backend en FastAPI."
       }
     }
   },
