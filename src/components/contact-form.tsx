@@ -25,9 +25,13 @@ export function ContactForm() {
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    // Capture the form element before the `await` below: React nulls out
+    // `event.currentTarget` once the synchronous part of the handler
+    // finishes, so reading it after an await throws even on success.
+    const form = event.currentTarget;
     setStatus("submitting");
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
     const payload = {
       name: String(formData.get("name") ?? ""),
       email: String(formData.get("email") ?? ""),
@@ -45,7 +49,7 @@ export function ContactForm() {
       if (!res.ok) throw new Error("Request failed");
 
       setStatus("success");
-      event.currentTarget.reset();
+      form.reset();
     } catch {
       setStatus("error");
     }
