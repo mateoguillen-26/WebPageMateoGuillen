@@ -50,7 +50,9 @@ export default async function ServicesPage({
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 -z-10 bg-glow-soft-alt opacity-50" />
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <section>
           <h2 className="text-xl font-semibold">{t("categoryDevelopment")}</h2>
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -78,6 +80,7 @@ export default async function ServicesPage({
             ))}
           </div>
         </section>
+        </div>
       </div>
     </div>
   );

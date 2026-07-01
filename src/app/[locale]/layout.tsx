@@ -100,7 +100,7 @@ export default async function LocaleLayout({
             ],
           }}
         />
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
           <NextIntlClientProvider>
             <Header />
             <main className="flex-1">{children}</main>

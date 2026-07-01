@@ -28,23 +28,23 @@ export function Header() {
   ] as const;
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2.5 font-semibold">
-          <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-[color-mix(in_oklch,var(--primary),var(--chart-2)_60%)] text-primary-foreground shadow-sm shadow-primary/30">
-            <Code2 className="size-4" aria-hidden />
+    <header className="sticky top-4 z-40 mx-auto w-full max-w-4xl px-4 sm:px-6">
+      <div className="flex h-14 items-center justify-between gap-2 rounded-full border bg-background/80 py-2 pr-2 pl-4 shadow-lg shadow-black/5 backdrop-blur-md supports-[backdrop-filter]:bg-background/65">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5 font-semibold">
+          <span className="flex size-7 items-center justify-center rounded-full bg-gradient-to-br from-primary to-[color-mix(in_oklch,var(--primary),var(--chart-2)_60%)] text-primary-foreground shadow-sm shadow-primary/30">
+            <Code2 className="size-3.5" aria-hidden />
           </span>
-          <span>Mateo Guillén</span>
+          <span className="hidden sm:inline">Mateo Guillén</span>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-1 rounded-full md:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                "relative text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
-                pathname === link.href && "text-foreground after:absolute after:-bottom-[21px] after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-primary"
+                "rounded-full px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
+                pathname === link.href && "bg-accent text-foreground"
               )}
             >
               {link.label}
@@ -52,19 +52,18 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-1.5 md:flex">
           <ThemeToggle />
           <LocaleSwitcher />
-          <Button size="sm" render={<Link href="/contacto">{t("cta")}</Link>} />
+          <Button size="sm" className="rounded-full" render={<Link href="/contacto">{t("cta")}</Link>} />
         </div>
 
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-1.5 md:hidden">
           <ThemeToggle />
-          <LocaleSwitcher />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger
               render={
-                <Button variant="outline" size="icon" aria-label="Menú">
+                <Button variant="ghost" size="icon" className="rounded-full" aria-label="Menú">
                   <MenuIcon className="size-5" />
                 </Button>
               }
@@ -84,6 +83,9 @@ export function Header() {
                     }
                   />
                 ))}
+                <div className="mt-3 px-3">
+                  <LocaleSwitcher />
+                </div>
                 <SheetClose
                   render={
                     <Button className="mt-4" render={<Link href="/contacto">{t("cta")}</Link>} />

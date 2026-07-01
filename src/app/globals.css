@@ -155,3 +155,21 @@
     color-mix(in oklch, var(--primary) 70%, var(--chart-2))
   );
 }
+
+/* Single soft blob for secondary sections — a lighter, differently-placed
+   sibling to bg-hero-glow so backgrounds vary instead of repeating. */
+@utility bg-glow-soft {
+  background-image: radial-gradient(
+    32rem 20rem at var(--glow-x, 85%) var(--glow-y, 100%),
+    color-mix(in oklch, var(--primary) 14%, transparent),
+    transparent
+  );
+}
+
+@utility bg-glow-soft-alt {
+  background-image: radial-gradient(
+    28rem 18rem at 8% 0%,
+    color-mix(in oklch, var(--chart-2) 14%, transparent),
+    transparent
+  );
+}

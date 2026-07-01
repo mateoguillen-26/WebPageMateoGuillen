@@ -47,17 +47,20 @@ export default async function ProjectsPage({
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.slug}
-              project={project}
-              title={tItems(`${project.slug}.title`)}
-              category={tItems(`${project.slug}.category`)}
-              description={tItems(`${project.slug}.description`)}
-            />
-          ))}
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 -z-10 bg-glow-soft opacity-50" />
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.slug}
+                project={project}
+                title={tItems(`${project.slug}.title`)}
+                category={tItems(`${project.slug}.category`)}
+                description={tItems(`${project.slug}.description`)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -11,7 +11,8 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t bg-muted/30">
+    <footer className="relative overflow-hidden border-t bg-muted/30">
+      <div className="absolute inset-0 -z-10 bg-glow-soft opacity-50" />
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[2fr_1fr_1fr]">
         <div className="space-y-3">
           <Link href="/" className="flex items-center gap-2.5 font-semibold">

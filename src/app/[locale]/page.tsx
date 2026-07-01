@@ -89,7 +89,8 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="border-b bg-muted/20">
+      <section className="relative overflow-hidden border-b bg-muted/20">
+        <div className="absolute inset-0 -z-10 bg-glow-soft-alt opacity-70" />
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
           <h2 className="text-center text-sm font-semibold uppercase tracking-wide text-muted-foreground">
             {t("trust.title")}
@@ -105,7 +106,9 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 -z-10 bg-glow-soft opacity-70" />
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-primary">
@@ -139,9 +142,11 @@ export default async function HomePage({
             />
           ))}
         </div>
+        </div>
       </section>
 
-      <section className="border-y bg-muted/20">
+      <section className="relative overflow-hidden border-y bg-muted/20">
+        <div className="absolute inset-0 -z-10 bg-glow-soft-alt opacity-70" />
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
           <p className="text-sm font-semibold uppercase tracking-wide text-primary">
             {t("process.eyebrow")}
@@ -168,7 +173,9 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 -z-10 bg-glow-soft opacity-70" />
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-primary">
@@ -203,9 +210,12 @@ export default async function HomePage({
             />
           ))}
         </div>
+        </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 -z-10 bg-glow-soft-alt opacity-70" />
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="grid items-center gap-10 md:grid-cols-2">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-primary">
@@ -228,6 +238,7 @@ export default async function HomePage({
               }
             />
           </div>
+        </div>
         </div>
       </section>
 
