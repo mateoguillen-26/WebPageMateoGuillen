@@ -19,9 +19,9 @@ export function ProjectCard({
   const Icon = project.icon;
 
   return (
-    <Card className="h-full">
+    <Card className="h-full transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10">
       <CardContent className="flex h-full flex-col gap-3">
-        <span className="flex size-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
+        <span className="flex size-11 items-center justify-center rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 text-primary">
           <Icon className="size-5" aria-hidden />
         </span>
         <div className="flex flex-wrap items-center gap-2">

@@ -9,6 +9,7 @@ import { siteConfig } from "@/lib/site-config";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { JsonLd } from "@/components/json-ld";
+import { ThemeProvider } from "@/components/theme-provider";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -80,6 +81,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col">
         <JsonLd
@@ -98,12 +100,14 @@ export default async function LocaleLayout({
             ],
           }}
         />
-        <NextIntlClientProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </NextIntlClientProvider>
-        {siteConfig.ga4Id ? <GoogleAnalytics gaId={siteConfig.ga4Id} /> : null}
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          <NextIntlClientProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </NextIntlClientProvider>
+          {siteConfig.ga4Id ? <GoogleAnalytics gaId={siteConfig.ga4Id} /> : null}
+        </ThemeProvider>
       </body>
     </html>
   );

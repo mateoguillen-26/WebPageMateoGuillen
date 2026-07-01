@@ -14,8 +14,10 @@ export function Footer() {
     <footer className="border-t bg-muted/30">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[2fr_1fr_1fr]">
         <div className="space-y-3">
-          <Link href="/" className="flex items-center gap-2 font-semibold">
-            <Code2 className="size-5" aria-hidden />
+          <Link href="/" className="flex items-center gap-2.5 font-semibold">
+            <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-[color-mix(in_oklch,var(--primary),var(--chart-2)_60%)] text-primary-foreground">
+              <Code2 className="size-4" aria-hidden />
+            </span>
             <span>Mateo Guillén</span>
           </Link>
           <p className="max-w-xs text-sm text-muted-foreground">{t("tagline")}</p>

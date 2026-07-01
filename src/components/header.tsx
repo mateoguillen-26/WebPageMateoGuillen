@@ -12,6 +12,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { LocaleSwitcher } from "@/components/locale-switcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -29,8 +30,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2 font-semibold">
-          <Code2 className="size-5" aria-hidden />
+        <Link href="/" className="flex items-center gap-2.5 font-semibold">
+          <span className="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-[color-mix(in_oklch,var(--primary),var(--chart-2)_60%)] text-primary-foreground shadow-sm shadow-primary/30">
+            <Code2 className="size-4" aria-hidden />
+          </span>
           <span>Mateo Guillén</span>
         </Link>
 
@@ -40,8 +43,8 @@ export function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
-                pathname === link.href && "text-foreground"
+                "relative text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
+                pathname === link.href && "text-foreground after:absolute after:-bottom-[21px] after:left-0 after:h-0.5 after:w-full after:rounded-full after:bg-primary"
               )}
             >
               {link.label}
@@ -50,11 +53,13 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
+          <ThemeToggle />
           <LocaleSwitcher />
           <Button size="sm" render={<Link href="/contacto">{t("cta")}</Link>} />
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
           <LocaleSwitcher />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger
