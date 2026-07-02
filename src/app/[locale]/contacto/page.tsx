@@ -3,6 +3,7 @@ import { Mail } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { AppLocale } from "@/i18n/routing";
 import { ContactForm } from "@/components/contact-form";
+import { WhatsAppIcon } from "@/components/whatsapp-icon";
 import { siteConfig } from "@/lib/site-config";
 
 export async function generateMetadata({
@@ -28,6 +29,8 @@ export default async function ContactPage({
   setRequestLocale(locale);
 
   const t = await getTranslations("Contact");
+  const tWa = await getTranslations("WhatsApp");
+  const whatsappHref = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(tWa("message"))}`;
 
   return (
     <div className="relative overflow-hidden">
@@ -46,13 +49,24 @@ export default async function ContactPage({
 
         <div className="mt-12 border-t pt-8">
           <h2 className="text-sm font-semibold text-muted-foreground">{t("directTitle")}</h2>
-          <a
-            href={`mailto:${siteConfig.contactEmail}`}
-            className="mt-2 inline-flex items-center gap-2 text-sm font-medium hover:text-primary"
-          >
-            <Mail className="size-4" />
-            {siteConfig.contactEmail}
-          </a>
+          <div className="mt-2 flex flex-col gap-2">
+            <a
+              href={`mailto:${siteConfig.contactEmail}`}
+              className="inline-flex items-center gap-2 text-sm font-medium hover:text-primary"
+            >
+              <Mail className="size-4" />
+              {siteConfig.contactEmail}
+            </a>
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium hover:text-primary"
+            >
+              <WhatsAppIcon className="size-4" />
+              {siteConfig.whatsappDisplay}
+            </a>
+          </div>
         </div>
       </div>
     </div>

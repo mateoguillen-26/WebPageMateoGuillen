@@ -10,6 +10,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { JsonLd } from "@/components/json-ld";
 import { ThemeProvider } from "@/components/theme-provider";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -105,6 +106,7 @@ export default async function LocaleLayout({
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
+            <WhatsAppButton />
           </NextIntlClientProvider>
           {siteConfig.ga4Id ? <GoogleAnalytics gaId={siteConfig.ga4Id} /> : null}
         </ThemeProvider>

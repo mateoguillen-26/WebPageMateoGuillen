@@ -263,6 +263,11 @@
       "errorMessage": "Something went wrong sending the message. Please try again or email me directly."
     },
     "directTitle": "You can also reach me directly",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp"
+  },
+  "WhatsApp": {
+    "ariaLabel": "Message me on WhatsApp",
+    "message": "Hi, I'd like to request a quote for my project."
   }
 }

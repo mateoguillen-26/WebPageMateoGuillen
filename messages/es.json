@@ -263,6 +263,11 @@
       "errorMessage": "Hubo un problema al enviar el mensaje. Probá de nuevo o escribime directamente por email."
     },
     "directTitle": "También podés escribirme directamente",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp"
+  },
+  "WhatsApp": {
+    "ariaLabel": "Escribir por WhatsApp",
+    "message": "Hola, quiero pedir un presupuesto para mi proyecto."
   }
 }
